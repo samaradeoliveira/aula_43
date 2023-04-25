@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  /*tipo de janela*/
+  overflow: hidden;
+  /*Pode ser substituído por scroll para teste*/
+}
+
+@font-face {
+  font-family: vollkorn;
+  src: url(./assets/Vollkorn-Bold.ttf);
+}
+
+canvas {
+  display: block;
+  /*pode ser substituído por inline para teste*/
+}
+
+.gameTitle {
+  width: 75%;
+  /*pode ser substituído por 75 para teste*/
+  height: 160px;
+  /*pode ser substituído por 85 para teste*/
+  margin-left: 140px;
+  margin-top: 120px;
+}
+
+.greeting {
+  font-size: 40px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+}
+
+.customInput {
+  width: 200px;
+  height: 30px;
+  border: 3px solid white;
+  /*significa que contém borda*/
+  border-radius: 5px;
+  /*quando aumenta o número, arredonda*/
+  padding: 5px;
+  /*tamanho da caixa de entrada*/
+  background-color: transparent;
+  /*formato padrão usado: transparente*/
+  font-size: 20px;
+  /*tamanho da fonte da caixa de entrada*/
+  outline: none;
+  /*contorno da borda*/
+  color: white;
+  /*cor do cursor*/
+  font-family: vollkorn;
+  text-align: center;
+}
+
+::placeholder {
+
+  color: white;
+  /*opacidade do texto da caixa de entrada*/
+  opacity: 0.5;
+
+}
+
+.resetText{
+  font-size:25px;
+  color:black;
+  font-family: vollkorn;
+  text-align:center;
+  text-shadow: -1px 1px 0 #ff1744, 
+                1px 1px 0 #ff1744, 
+                1px -1px 0 #ff1744, 
+                -1px -1px 0 #ff1744;
+}
+
+.resetButton{
+  width: 60px;
+  height: 60px;
+  background-image: url('./assets/reset.png');
+  background-size: cover;
+  border-radius: 30px;
+  display:inline-block;
+  cursor:pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+.customButton {
+  width: 180px;
+  height: 50px;
+  background-color: #fea834;
+  border: 3px solid white;
+  color: #FFFF;
+  font-weight: bold;
+  /*pode ser substituído por: caracter, para teste*/
+  border-radius: 10px;
+  margin-bottom: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  cursor: pointer;
+  /*explicação em aulas futuras*/
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+.leadersText{
+  font-size: 20px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+}
